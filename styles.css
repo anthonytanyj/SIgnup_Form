@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Inter",BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  }
+
+  body{
+    display: flex;
+    gap: 5%;
+    
+  }
+
+  .imgBG {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 45%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the opacity as needed */
+    z-index: 1; /* Place the overlay behind the content */
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin:5%
+}
+  
+  .hero {
+    width: 45%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .logo {
+    display: block;
+    margin: auto; /* Center the logo both horizontally and vertically */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of .imgBG */
+    max-height: 100%; /* Ensure the logo doesn't exceed the height of .imgBG */
+    object-fit: contain; /* Maintain aspect ratio and fit inside .imgBG */
+}
